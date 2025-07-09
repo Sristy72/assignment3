@@ -1,4 +1,3 @@
-// screens/post_screen.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controller/item_controller.dart';
@@ -21,9 +20,12 @@ class ItemScreen extends StatelessWidget {
           itemCount: controller.posts.length,
           itemBuilder: (context, index) {
             final post = controller.posts[index];
-            return ListTile(
-              title: Text(post.title),
-              subtitle: Text(post.body),
+            return Card(
+              elevation: 3,
+              child: ListTile(
+                title: Text(post.title),
+                subtitle: Text(post.body),
+              ),
             );
           },
         );
