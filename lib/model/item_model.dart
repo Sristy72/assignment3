@@ -1,4 +1,3 @@
-// models/post.dart
 class Item {
   final int id;
   final String title;
